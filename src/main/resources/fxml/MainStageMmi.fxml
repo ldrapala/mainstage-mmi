@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<GridPane fx:id="gridPane" alignment="TOP_LEFT" hgap="2" vgap="2" 
+          xmlns="http://javafx.com/javafx/8.0.40" 
+          xmlns:fx="http://javafx.com/fxml" 
+          fx:controller="byt.money.mainstagemmi.internal.controller.MainStageMmiController"
+          maxHeight="Infinity" maxWidth="Infinity">
+    <padding>
+        <Insets bottom="2" left="2" right="2" top="2" />
+    </padding>
+    
+    <MenuBar fx:id="menuBar" 
+                 GridPane.columnIndex="0"  GridPane.rowIndex="0" 
+                 GridPane.columnSpan="2" GridPane.fillWidth="true">
+        <menus>
+            <Menu text="File">
+                <items>
+                    <MenuItem text="New" />
+                    <MenuItem text="Open" />
+                    <MenuItem text="Save" />
+                    <MenuItem text="Save As" />
+                    <SeparatorMenuItem />
+                    <MenuItem text="Exit" />
+                </items>
+            </Menu>
+            <Menu text="Edit">
+                <items>
+                    <MenuItem text="Copy" />
+                    <MenuItem text="Cut" />
+                    <MenuItem text="Paste" />
+                </items>
+            </Menu>
+            <Menu text="Help">
+                <items>
+                    <MenuItem disable="true" text="Search" />
+                    <MenuItem text="Online Manual" visible="false" />
+                    <SeparatorMenuItem />
+                    <MenuItem text="About" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <GridPane fx:id="leftPanel" 
+                  GridPane.columnIndex="0"  GridPane.rowIndex="1" >
+    </GridPane>    
+    <GridPane fx:id="centerPanel" 
+                  GridPane.columnIndex="1"  GridPane.rowIndex="1" GridPane.fillWidth="true" 
+                GridPane.hgrow="always" GridPane.vgrow="always">
+    </GridPane> 
+</GridPane>
